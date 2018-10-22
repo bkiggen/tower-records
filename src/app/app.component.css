@@ -1,0 +1,26 @@
+
+.navi ul {
+  display: flex;
+  list-style: none;
+}
+
+.navi ul li {
+  margin-left: 8px;
+  margin-right: 4px;
+  padding: 10px;
+  background-color: #E1E1E1;
+  border: 2px solid red;
+  text-decoration: none;
+}
+
+.navi a {
+  color: black;
+}
+
+.navi a:visited {
+  color: black;
+}
+
+.navi a:focus {
+  color: red;
+}
