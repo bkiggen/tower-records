@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: tan;
+  margin: 15px;
+  padding: 8px;
+  color: peachpuff;
+  border: 2px red dashed;
+  outline: 4px purple solid;
+}
+
+.card-meta {
+  font-size: 20px;
+  line-height: 28px;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+}

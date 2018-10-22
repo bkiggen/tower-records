@@ -24,4 +24,23 @@ export class AlbumService {
   getAlbumById(albumId: string) {
     return this.database.object('albums/' + albumId);
   }
+
+  callReddit() {
+    return new Promise(function(resolve) {
+
+    var request = new XMLHttpRequest();
+    request.withCredentials = false;
+
+    request.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        resolve(request.response)
+      }
+    });
+
+    request.open("GET", "https://www.reddit.com/r/theworldisflat/search.json?restrict_sr=on&q=flat%20earth");
+
+
+    request.send();
+  });
+  }
 }
